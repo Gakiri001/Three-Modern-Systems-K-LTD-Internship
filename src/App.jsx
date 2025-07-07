@@ -1,15 +1,14 @@
-import "./assets/global.css"
-import "./App.css"
-import { Button } from "./components/ui/button"
+import "./assets/global.css";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Register from "./pages/Register/Register";
 
 function App() {
-
   return (
-    <>
-    <h2 className="bg-red-300">Oyah</h2>
-    <Button>Gathee</Button>
-    </>
-  )
+    <Routes>
+      <Route element={<Register />} path="/" />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
